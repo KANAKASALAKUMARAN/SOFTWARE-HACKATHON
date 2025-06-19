@@ -1,0 +1,20 @@
+let fruits = ['apple','watermelon','grapes']; // Initialize an array with three elements
+console.log("Original Array:");
+console.log(fruits);
+console.log("Array after push operation:");
+fruits.push("banana");
+console.log(fruits);
+console.log("Array after pop operation:");
+fruits.pop();
+console.log(fruits);
+console.log("Accessing elements:");
+console.log(fruits[0]);
+let size = fruits.length;
+console.log(fruits[size-1]);
+console.log("Array after unshift operation:");
+console.log("cherry");
+fruits.unshift("cherry");
+console.log(fruits);
+console.log("Array after shift operation:");
+fruits.shift();
+console.log(fruits);
