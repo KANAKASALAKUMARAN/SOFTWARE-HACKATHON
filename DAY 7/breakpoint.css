@@ -1,0 +1,30 @@
+.card {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    background-color: rgb(197, 143, 72);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.bg-blue-500 {
+    background-color: rgb(219, 190, 77);
+}
+
+@media (max-width: 400px) {
+    .card {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        font-size: 30px;
+    }
+}
