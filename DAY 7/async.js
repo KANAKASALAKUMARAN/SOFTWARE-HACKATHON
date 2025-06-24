@@ -38,3 +38,24 @@ order
     console.log("Error: ",error);
   });
   
+function orderFunction (){
+    let order = new Promise((resolve, reject) => {
+        let isOverWorking = true;
+        setTimeout(() => {
+          if(isOverWorking) {
+            resolve("Order is ready");
+          } else {
+            reject("Order delay");
+          }
+        }, 3000);
+      });
+      return order;
+}
+async function orderFood(){
+    try{
+        let message = await orderFunction();
+        console.log("Success: ",message);
+    } catch(error){
+        console.log("Error: ",error);
+    }
+}
